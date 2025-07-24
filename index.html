@@ -22,12 +22,19 @@ body > *:not(.overlay) {
 
    body {
   margin: 0;
- font-family: 'Arial Black', sans-serif;
-  background: url('PORTADA FINAL FINAL FINAL.png') no-repeat center center fixed;
+  font-family: 'Arial Black', sans-serif;
+  background-image: 
+    linear-gradient(rgba(255, 165, 0, 0.4), rgba(255, 0, 0, 0.4)), 
+    url('PORTADA FINAL FINAL FINAL.png');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: multiply; /* Modo de fusión */
   color: white;
   text-align: center;
 }
+
 
 
     .title {
