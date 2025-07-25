@@ -24,7 +24,7 @@ body > *:not(.overlay) {
   margin: 0;
   font-family: 'Arial Black', sans-serif;
   background-image: 
-    linear-gradient(rgba(255, 165, 0, 0.4), rgba(255, 0, 0, 0.4)), 
+    linear-gradient(rgb(255, 166, 0), rgba(255, 0, 0, 0.4)), 
     url('PORTADA FINAL FINAL FINAL.png');
   background-size: cover;
   background-position: center;
@@ -47,7 +47,7 @@ body > *:not(.overlay) {
 
     .subtitle {
       font-size: 20px;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     .button-container {
@@ -58,20 +58,28 @@ body > *:not(.overlay) {
       margin-bottom: 60px;
     }
 
-    .music-button {
-      width: 240px;
-      padding: 15px;
-      border-radius: 10px;
-      background: rgba(255, 255, 255, 0.15);
-      border: none;
-      color: white;
-      font-size: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
+  .music-button {
+  width: 240px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px); /* efecto vidrio opcional */
+}
+
+.music-button:hover {
+  background: rgba(255, 255, 255, 0.35); /* color más claro */
+  transform: scale(1.05); /* se agranda */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* sombra */
+}
+
 
     .music-button:hover {
       background: rgba(255, 255, 255, 0.3);
@@ -85,6 +93,10 @@ body > *:not(.overlay) {
   width: 300px;
   max-width: 80%;
   height: auto;
+}
+
+.logo-img:hover {
+  transform: scale(1.05); /* se agranda */
 }
 
   </style>
@@ -108,15 +120,6 @@ body > *:not(.overlay) {
     </a>
     <a class="music-button" href="https://music.amazon.com" target="_blank">
       <img src="https://img.icons8.com/ios-filled/50/ffffff/amazon.png"/> Amazon Music
-    </a>
-    <a class="music-button" href="https://deezer.com" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/ffffff/deezer.png"/> Deezer
-    </a>
-    <a class="music-button" href="https://pandora.com" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/ffffff/pandora.png"/> Pandora
-    </a>
-    <a class="music-button" href="https://tidal.com" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/ffffff/tidal.png"/> Tidal
     </a>
     <a class="music-button" href="https://tu-merch.com" target="_blank">
       <img src="https://img.icons8.com/ios-filled/50/ffffff/t-shirt.png"/> MeRCH
